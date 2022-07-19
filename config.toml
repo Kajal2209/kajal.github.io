@@ -1,0 +1,59 @@
+baseurl = "https://example.com/"
+title = "Kajal's Profile"
+theme = "pulp"
+canonifyurls = true
+hasCJKLanguage = true
+# pygmentsCodefences = true
+# pygmentsUseClasses = true
+# googleAnalytics = "{your tracking code}"
+
+[markup.goldmark.renderer]
+    unsafe = true # Allow user HTML tags
+
+[params]
+    author = "Kajal Paliwal"
+    avatar = "avatar.jpg"
+    # avatarDescription = "My avatar description"
+    favicon = "avatar.jpg"
+    description = """
+       Hello people ! 
+       I am an AI/ML Enthusist , currently looking for more opportunities to improve my knowledge in my domain.
+    """
+    publicationYear = "2022"
+    # listPageDateFormat = "January, 2006" # See https://gohugo.io/functions/format/
+    # singlePageDateFormat = "January 2, 2006"
+    # custom_css = ["/css/custom.css"]
+    # custom_js = ["/js/custom.js"]
+
+# Make sure setting a following option for search bar to work
+[outputs]
+    section = ["JSON", "HTML"]
+    term = ["JSON", "HTML"]
+
+[[menu.main]]
+    identifier = "Linkedin"
+    # name = "Blog" #If display text link, cancel comment out
+    pre = "<i class='fab fa-linkedin-in fa-lg'></i>" #Choose your favorite font from Font Awesome
+    url = "https://www.linkedin.com/in/kajal-paliwal-54041a226/"
+    weight = 10
+
+[[menu.main]]
+    identifier = "twitter"
+    # name = "Twitter"
+    pre = "<i class='fab fa-twitter fa-lg'></i>"
+    url = " https://twitter.com/Kajalpaliwal7?t=Ued_X59dCAiqG8TwJZzHbA&s=08"
+    weight = 20
+
+[[menu.main]]
+    identifier = "github"
+    # name = "GitHub"
+    pre = "<i class='fab fa-github fa-lg'></i>"
+    url = "https://github.com/Kajal2209"
+    weight = 30
+
+[[menu.main]]
+    identifier = "email"
+    # name = "Email"
+    pre = "<i class='fa fa-envelope fa-lg'></i>"
+    url = "mailto:kajalpaliwal47@gmail.com"
+    weight = 40

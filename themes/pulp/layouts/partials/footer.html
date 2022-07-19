@@ -1,0 +1,10 @@
+<footer>
+  <p>
+  &copy; {{ .Site.Params.publicationYear }} {{ .Site.Params.Author }}.
+  Designed by <a href="https://gohugo.io/">Me ❤️</a>
+  using the <a href="https://github.com/koirand/pulp/">Magic</a>.
+  </p>
+</footer>
+{{- range .Site.Params.custom_js -}}
+<script src="{{ . }}"></script>
+{{ end }}
